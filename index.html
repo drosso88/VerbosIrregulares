@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-block btn-success" id="spanishVerb" ></button>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-block btn-secondary" id="primeraForm">Una
+                    linea</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-block btn-secondary" id="segundaForma">Middle</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-block btn-secondary" id="terceraForma">Right</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/listaVerbos.js"></script>
+    <script>
+        function eligeVerbo(){
+            var verboelegido =Math.floor( Math.random()*verbos.length);
+        document.getElementById('spanishVerb').innerHTML=verbos[verboelegido][3];
+        document.getElementById('primeraForm').innerHTML=verbos[verboelegido][0];
+        document.getElementById('segundaForma').innerHTML=verbos[verboelegido][1];
+        document.getElementById('terceraForma').innerHTML=verbos[verboelegido][2];
+        }
+        eligeVerbo();
+        
+    
+    </script>
+
+</body>
+
+</html>
