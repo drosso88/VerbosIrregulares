@@ -145,3 +145,11 @@ var verbos = [
 ["wring","wrung","wrung","torcer"],
 ["write","wrote","written","escribir"]
 ];
+
+  
+var verbos2 = [
+    ["be","was","been","ser"],
+    ["be","were","been","ser"],
+    ["learn", "learnt", "learnt", "aprender"],
+    ["learn", "learnd", "learnd", "aprender"]  
+];
